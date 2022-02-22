@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.container .forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container .forms-container .signin-signup {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+.container .forms-container .signin-signup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5rem;
+  overflow: hidden;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.container .forms-container .signin-signup form .title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.container .forms-container .signin-signup form .input-field {
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+}
+
+.container .forms-container .signin-signup form .input-field em {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  font-size: 1.1rem;
+}
+
+.container .forms-container .signin-signup form .input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.container .forms-container .signin-signup form .input-field input::-webkit-input-placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.container .forms-container .signin-signup form .input-field input:-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.container .forms-container .signin-signup form .input-field input::-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.container .forms-container .signin-signup form .input-field input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.container .forms-container .signin-signup form .social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.container .forms-container .signin-signup form .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .forms-container .signin-signup form .social-media .social-icon {
+  height: 46px;
+  width: 46px;
+  border: 1px solid #333;
+  margin: 0 0.45rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  border-radius: 35%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .forms-container .signin-signup form .social-media .social-icon:hover {
+  color: #00e600;
+  border-color: #00e600;
+}
+
+.container .forms-container .signin-signup form.sign-in-form {
+  z-index: 2;
+}
+
+.container .forms-container .signin-signup form.sign-up-form {
+  z-index: 1;
+  opacity: 0;
+}
+
+.container .btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #00e600;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .btn:hover {
+  background-color: #00b300;
+}
+
+.container .panels-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.container .panels-container .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  z-index: 7;
+}
+
+.container .panels-container .panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.container .panels-container .panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.container .panels-container .panel .btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.container .panels-container .left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.container .panels-container .right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.container .panels-container .right-panel .content,
+.container .panels-container .right-panel .image {
+  -webkit-transform: translateX(800px);
+          transform: translateX(800px);
+}
+
+.container .content {
+  color: #fff;
+}
+
+.container .image {
+  width: 100%;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #00e600, #00b300);
+  top: -10%;
+  right: 48%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 6;
+}
+/*# sourceMappingURL=style.css.map */
