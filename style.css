@@ -15,7 +15,7 @@ input {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-image: url(img/bg.jpg);
   overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ input {
 
 .container .forms-container .signin-signup form .title {
   font-size: 2.2rem;
-  color: #444;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -163,8 +163,8 @@ input {
 }
 
 .container .forms-container .signin-signup form .social-media .social-icon:hover {
-  color: #00e600;
-  border-color: #00e600;
+  color: #ff8533;
+  border-color: #ff6600;
 }
 
 .container form.sign-in-form {
@@ -183,7 +183,7 @@ input {
   outline: none;
   border-radius: 15px;
   cursor: pointer;
-  background-color: #00e600;
+  background-color: #ff8533;
   text-transform: uppercase;
   font-weight: 700;
   margin: 10px 0;
@@ -192,7 +192,7 @@ input {
 }
 
 .container .btn:hover {
-  background-color: #00b300;
+  background-color: #ff6600;
 }
 
 .container .panels-container {
@@ -279,7 +279,7 @@ input {
   width: 2000px;
   height: 2000px;
   border-radius: 50%;
-  background: linear-gradient(-45deg, #00e600, #00b300);
+  background: linear-gradient(-45deg, #ff6600, #ff8533);
   top: -10%;
   right: 48%;
   -webkit-transform: translateY(-50%);
