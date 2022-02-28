@@ -14,7 +14,7 @@ input {
 .container {
   position: relative;
   width: 100%;
-  background-image: url(img/bg.jpg);
+  background-image: url(img/bg.png);
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
@@ -63,7 +63,7 @@ form.sign-in-form {
 
 .title {
   font-size: 2.2rem;
-  color: #fff;
+  color: #333;
   margin-bottom: 10px;
 }
 
